@@ -11,6 +11,7 @@
 2.配置在vscode中使用git，需要使用ssh生成了公钥、私钥，再将公钥填到GITHUB的网站的SSH公钥那里。还是提示不能链接。
 3.配置了git config --global http.proxy 'http://127.0.0.1:7890'，后成功。
 4.公钥、私钥不能上传，所以要排除掉，只需要编辑.gitignore即可。
+5.一直提示fatal: branch 'main' does not exist，使用网上的命令，git branch --set-upstream，不行，再查原因使用git push --set-upstream origin master，即可解决。现在github默认的分支是main，但是本地的又是master，所以估计报错了。
 
 */
 
